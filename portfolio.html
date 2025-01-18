@@ -4,51 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h2>MA PAGE PORTFOLIO</h2>
-    </header>
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Work</li>
-        <li>contact</li>
-    </ul>
-    <H2>HOME</H2>
-    <img src="OIP.jpg" alt="photo"><img src="MYé.jpg" alt="ma photo">
+  <header>
+    <h1>MA PAGE PORTFOLIO</h1>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="home">
+    <h2>HOME</h2>
+      <img src="MYé.jpg" alt="ma photo">
+    </div>
     <h2>ABOUT</h2>
     <p> Je suis un jeune ivoirien diplômé en informatique de gestion, et un admirateur des outils informatiques. <br> Très doué en tant que développeur web, je travaille sur un projet de jeu vidéo dans la langue locale.
     </p>
-    <h2>Work</h2>
+    <h2>WORK</h2>
      <p>j’ai travaillé sur plusieurs projets dans le monde tel que la création du site web d’ UTB, une compagnie de transport 
         en Côte d’Ivoire 
      </p>
       <a href="https://websiteutb.azurewebsites.net/">https://websiteutb.azurewebsites.net/</a> <br>
       <br>
-     
+     <div id="work">
        <video src="Alpha Blondy .mp4" autoplay controls muted width="400" height="400"></video>
        
        <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ca0XP-I6yo?si=QlPY8q_hM4i-Y8y3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
-     
+      </div>
       
     
      <h2>CONTACT</h2>
-     <form action="NOM">NOM</form>
-     <input type="NOM">
-
- <form action="PRENOM">PRENOM</form>
-     <input type="text">
-     <form action="EMAIL">EMAIL</form>
-     <input type="text">
-     <form action="">NUMERO</form>
-     <input type="text"><br>
-     <input type="submit" value="ENVOYER">
-    <br><br>
-
-
+    
+    <div id="contact">
+     <form action="/submit-form" method="post">
+      <li>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="user_email" />
+    </li>
+    <li>
+        <label for="numero">Numero:</label>
+        <input type="text" id="numero" name="user_numero" />
+      </li>  
+      <li>
+      <label for="message">Message:</label>
+      <textarea id="message" name="user_message"></textarea>
+    </li>
+      <div class="button">
+      <button type="submit">Send Message</button>
+      </div>
+      </form>
+    </div>
      <footer>
         <a href="aubinguimere01@gmail.com">aubinguimere01@gmail.com</a>
      </footer>
